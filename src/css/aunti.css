@@ -1,0 +1,195 @@
+.Aunti {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../image/aunti.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.content-container {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ffffff;
+  padding: 40px;
+  max-width: 90%;
+  width: 100%;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  animation: slideInDown 1s ease-in-out;
+}
+
+.btn-aunti {
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  border: 1px solid #313030;
+  color: #221f1f;
+  border: none;
+  flex: 1 1 40%;
+  max-width: 250px;
+  min-width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  background-color: #ffffff;
+  margin: 10px;
+  padding: 50px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.btn-aunti:hover {
+  opacity: 0.8;
+  transform: translateY(-10px);
+
+}
+
+@media (max-width: 768px) {
+  .btn-aunti {
+    font-size: 16px;
+    height: 45px;
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-aunti {
+    font-size: 14px;
+    height: 40px;
+  }
+
+  .form-container {
+    padding: 10px;
+  }
+}
+
+/*Формы*/
+
+
+.button-group{
+  display:flex;
+  flex-direction: row;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #999;
+  outline: none;
+}
+
+.btn {
+  font-size: 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: #221f1f;
+  border: none;
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  margin: 20px;
+  padding-left:20px;
+  padding-right:20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  transform: translateY(-10px);
+}
+
+.check{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-left: 25px;
+}
+
+.form-group .forgot-password{
+  margin-left: 5px;
+}
+
+.error {
+  color: rgb(192, 18, 18);
+  font-size: 0.875em;
+  margin-top: 0.25em;
+  margin-left: 5px;
+}
+
+.form-group label{
+  font-size: 12px;
+}
+
+.loginform{
+
+  animation: fadeIn 0.5s ease-in-out;
+
+}
+
+.registerForm{
+
+  animation: fadeIn 0.5s ease-in-out;
+
+}

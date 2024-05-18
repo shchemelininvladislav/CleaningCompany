@@ -1,0 +1,173 @@
+.info-aunti {
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #333;
+    background-image: url('../image/aunti.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: fadeIn 1s ease-in-out;
+    padding-bottom: 50px;
+}
+
+/* Header styling */
+.header {
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    animation: slideInDown 1s ease-in-out;
+}
+
+.header-content {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.header p {
+    font-size: 1.5em;
+    animation: fadeInUp 2s ease-in-out;
+}
+
+/* Services section styling */
+.services {
+    padding: 50px 20px;
+    background-color: #f3f4f6;
+    text-align: center;
+}
+
+.services-title {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 20px;
+    margin: 15px;
+    width: 28%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    margin-bottom: 10px;
+}
+
+.service-residential h3 {
+    color: #6c757d;
+}
+
+.service-office h3 {
+    color: #6c757d;
+}
+
+.service-general h3 {
+    color: #6c757d;
+}
+
+/* About Us section styling */
+.about-us {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.about-description {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Contact section styling */
+.contact {
+    padding: 50px 20px;
+    background-color: #f3f4f6;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.contact-description {
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.8;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.contact-button {
+    background-color: #565e64;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 5px;
+    animation: fadeInUp 2s ease-in-out;
+    margin-top: 20px;
+}
+
+.contact-button:hover {
+    background-color: #495057;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
